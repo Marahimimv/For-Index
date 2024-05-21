@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'for_index';
+  meyve:string="";
+  meyveler: string [] = ["alma","armud","heyva"]
+
+  add(){
+    this.meyveler.push(this.meyve);
+  }
 }
